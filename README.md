@@ -40,27 +40,29 @@ changing position every minute
 ## Installation
 1. run sudo raspi-config and ensure that the i2c interface is enabled
    
-2. Clone the repository:
+2. Copy the source code:
 ```
-git clone https://github.com/g0hjq/pimonitor.git<br>
-(or copy files pimonitor.c and makefile to a local directory)
+copy files 'pimonitor.c' and 'makefile' to a local directory
+
+(or git clone https://github.com/g0hjq/pimonitor.git)
 ```
-4. Install dependencies
+
+3. Install dependencies
 ```
 sudo apt install libi2c-dev
 ```
 
-6. Compile the program
+4. Compile the program
 ```
 make
 ```
 
-7. Test the program
+5. Test the program
 ```
 ./pimonitor
 ```
 
-8. Install the program to /usr/local/bin and set up the systemd service<br>
+6. Install the program to /usr/local/bin and set up the systemd service<br>
 ```
 sudo make install-service
 ```
