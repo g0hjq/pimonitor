@@ -6,12 +6,28 @@ Originally developed for the [52Pi Mini Tower Case](https://www.52pi.com/product
 
 ## Features
 - Displays system status (e.g., CPU, memory, temperature) on an SSD1306 OLED display.
-- Lightweight and written in C for efficiency.
-- Configurable for various Raspberry Pi models and I2C-connected OLED displays.
+- Lightweight and written in C for efficiency. 
+- Easy to install - Requires no special drivers, font files or libraries
 - Developed for the 52Pi Mini Tower Case but works with any compatible setup.
 
-## Screenshot
-![PiMonitor Display](images/screenshot.png)
+## Screenshots
+### Startup screen
+Displayed for 15 seconds on startup. Shows the hostname, network port and IPv4 Address
+<br><br>
+![PiMonitor Display](images/PXL_20250901_132239426.jpg)
+
+### Status Screen
+Shows the current time & date, CPU utilisation percentage, CPU temperature in degrees Celcius and memory utilisation percent
+<br><br>
+![PiMonitor Display](images/PXL_20250901_132250247.jpg)
+
+### Screen Saver
+After the cpu usage, temperature and memory usage have been low for a few minutes, the screen saver 
+will start up to reduce oled burn-in. This displays the current time with reduced brightness, 
+changing position every minute
+<br><br>
+![PiMonitor Display](images/PXL_20250901_135251616.jpg)
+
 
 ## Requirements
 - Raspberry Pi (any model) or similar single-board computer.
@@ -48,6 +64,7 @@ make
 ```
 sudo make install-service
 ```
+
 ## Uninstallation
 To remove PiMonitor and its systemd service
 ```
@@ -55,21 +72,9 @@ sudo make uninstall
 ```
 
 ## Compatibility
-- Hardware: Works with any Raspberry Pi or system with an SSD1306 OLED display connected via I2C. Originally designed for the 52Pi Mini Tower Case.
+- Hardware: Works with any Raspberry Pi or system with a SSD1306 OLED display connected via I2C. Originally designed for the 52Pi Mini Tower Case.
 - I2C Setup: Ensure I2C is enabled (use raspi-config → Interfacing Options → I2C → Enable).
 - Dependencies: Uses the standard Linux tools (gcc, make) and I2C libraries (e.g., libi2c-dev)
-
-## Operation
-The program should start automatically on bootup. The following screens will be displayed
-
-1. Splash screen<br>
-Displayed for 15 seconds on startup. Shows the hostname, network port and IPv4 Address
-
-2. Status Screen<br>
-Shows the current time & date, CPU utilisation percentage, CPU temperature in Celcius and memory utilisation percent
-
-3. Screen Saver<br>
-After the cpu usage, temperature and memory usage have been low for a few minutes, the screen saver will start up to reduce oled burn-in. This displays the current time in reduced brightness, changing position every minute
 
 
 
