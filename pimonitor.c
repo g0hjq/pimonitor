@@ -30,7 +30,7 @@
 #define SPLASH_SCREEN_TIME 10 
 
 // Screensaver start time (in seconds) 
-#define IDLE_TIMER 180
+#define IDLE_TIMER 120
 
 // Screensaver will exit if any of these values are exceeded
 #define IDLE_CPU_PERCENT 2.0
