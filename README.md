@@ -6,6 +6,7 @@ Originally developed for the [52Pi Mini Tower Case](https://www.52pi.com/product
 
 ## Features
 - Displays system status (e.g., CPU, memory, temperature) on an SSD1306 OLED display.
+- Easy to read fonts
 - Lightweight and written in C for efficiency. 
 - Easy to install - Requires no special drivers, font files or libraries
 - Developed for the 52Pi Mini Tower Case but works with any compatible setup.
