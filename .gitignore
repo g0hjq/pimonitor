@@ -1,0 +1,6 @@
+pimonitor
+*.o
+pimonitor.service
+*.tmp
+*~
+*.log
